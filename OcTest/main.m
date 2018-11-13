@@ -17,7 +17,7 @@
     NSInteger _age;
 }
 
-//构造方法(初始化方法)
+//构造方法(初始化对象方法)
 - (id) init;
 
 //setter方法
@@ -33,13 +33,17 @@
 - (NSString *)name;
 - (NSInteger)age;
 
+//类方法,给类调用
+//testStudent 测试学生类是否可用
++ (void)testStudent;
+
 @end
 
 
 
 @implementation Student
 
-- (id) init{
+- (id)init{
     self = [super init];
     if (self){
         _name = @"超";
@@ -48,13 +52,52 @@
     return self;
 }
 
+- (void)setName:(NSString *)name{
+    _name = name;
+}
+
+- (void)setAge:(NSInteger)age{
+    _age = age;
+}
+
+- (void)setName:(NSString *)name andAge:(NSInteger)age{
+    _name = name;
+    _age = age;
+}
+
+- (NSString *)name{
+    return _name;
+}
+
+- (NSInteger)age{
+    return _age;
+}
+
++ (void)testStudent{
+    Student *stu = [[Student alloc] init];
+    [stu setName:@"小胡" andAge:20];
+    NSLog(@"name=%@, age=%li", [stu name], [stu age]);
+}
+
 @end
 
 
 //入口
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        NSLog(@"this is my first ocTest");
+        Student *stu = [[Student alloc] init];
+        NSLog(@"name = %@, age = %li", [stu name], [stu age]); //name = 超, age = 28
+        
+        //使用setter方法
+        [stu setName:@"小马"];  //@"小马" 表示oc字符串对象
+        [stu setAge:12];
+        NSLog(@"name = %@, age = %li", [stu name], [stu age]); //name = 小马, age = 12
+        
+        [stu setName:@"小赵" andAge: 11];
+        NSLog(@"name = %@, age = %li", [stu name], [stu age]); //name = 小赵, age = 11
+        
+        //调用类方法
+        [Student testStudent];
     }
     return 0;
 }
