@@ -88,11 +88,10 @@ int main(int argc, const char * argv[]) {
         Student *stu = [[Student alloc] init];
         NSLog(@"name = %@, age = %li", [stu name], [stu age]); //name = 超, age = 28
         
-        //使用setter方法
+        //使用实例ssetter方法
         [stu setName:@"小马"];  //@"小马" 表示oc字符串对象
         [stu setAge:12];
         NSLog(@"name = %@, age = %li", [stu name], [stu age]); //name = 小马, age = 12
-        
         [stu setName:@"小赵" andAge: 11];
         NSLog(@"name = %@, age = %li", [stu name], [stu age]); //name = 小赵, age = 11
         
