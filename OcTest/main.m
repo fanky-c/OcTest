@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Person.h"
 
 
 //NSObject 基类(根类)
@@ -97,6 +98,9 @@ int main(int argc, const char * argv[]) {
         
         //调用类方法
         [Student testStudent];
+        
+        //调用Person testPerson类方法
+        [Person testPerson];
     }
     return 0;
 }
