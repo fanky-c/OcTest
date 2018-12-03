@@ -10,6 +10,8 @@
 #import "class/Student.h"
 #import "class/Sum.h"
 #import "class/Triangle.h"
+#import "class/CircleExtendsShape.h"
+#import "class/TriangleExtendsShape.h"
 
 //入口
 int main(int argc, const char * argv[]) {
@@ -46,6 +48,14 @@ int main(int argc, const char * argv[]) {
         [tri1 setHeight:10];
         [tri1 setWidth:10];
         NSLog(@"三角形的面积是：%g", [tri1 area]);
+        
+        //CircleExtendsShape
+        CircleExtendsShape * Circle = [[CircleExtendsShape alloc] initWithRadius:10];
+        NSLog(@"CircleExtendsShape：%g" , [Circle area]);
+        
+        //TriangleExtendsShape.h
+        TriangleExtendsShape * Triangele = [[TriangleExtendsShape alloc] initWithBottom:10 initWithHeight:15];
+        NSLog(@"TriangleExtendsShape：%g" , [Triangele area]);
         
         
     }

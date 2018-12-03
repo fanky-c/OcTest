@@ -1,5 +1,5 @@
 //
-//  CircleExtendsShape.h
+//  TriangleExtendsShape.h
 //  OcTest
 //
 //  Created by 赵超 on 2018/12/3.
@@ -10,8 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CircleExtendsShape : Shape
--(id) initWithRadius:(int)_radius;
+@interface TriangleExtendsShape : Shape
+-(id) initWithBottom:(int)_bottom initWithHeight:(int)_height;
 -(double) area;
 @end
 

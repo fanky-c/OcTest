@@ -13,6 +13,7 @@
 		A02E723921A148AA007DF9EC /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = A02E723821A148AA007DF9EC /* Student.m */; };
 		A02E723C21A14E9C007DF9EC /* Sum.m in Sources */ = {isa = PBXBuildFile; fileRef = A02E723B21A14E9C007DF9EC /* Sum.m */; };
 		A03AA54521B526B000D4F276 /* CircleExtendsShape.m in Sources */ = {isa = PBXBuildFile; fileRef = A03AA54421B526B000D4F276 /* CircleExtendsShape.m */; };
+		A03AA54821B52CEB00D4F276 /* TriangleExtendsShape.m in Sources */ = {isa = PBXBuildFile; fileRef = A03AA54721B52CEB00D4F276 /* TriangleExtendsShape.m */; };
 		A0B21DEB219D10FD00D7E47C /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B21DEA219D10FD00D7E47C /* Person.m */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,8 @@
 		A02E723B21A14E9C007DF9EC /* Sum.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sum.m; sourceTree = "<group>"; };
 		A03AA54321B526B000D4F276 /* CircleExtendsShape.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleExtendsShape.h; sourceTree = "<group>"; };
 		A03AA54421B526B000D4F276 /* CircleExtendsShape.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleExtendsShape.m; sourceTree = "<group>"; };
+		A03AA54621B52CEB00D4F276 /* TriangleExtendsShape.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TriangleExtendsShape.h; sourceTree = "<group>"; };
+		A03AA54721B52CEB00D4F276 /* TriangleExtendsShape.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TriangleExtendsShape.m; sourceTree = "<group>"; };
 		A0B21DE9219D10FD00D7E47C /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		A0B21DEA219D10FD00D7E47C /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +99,8 @@
 				A01571ED21A7A32E0040DA58 /* Shape.m */,
 				A03AA54321B526B000D4F276 /* CircleExtendsShape.h */,
 				A03AA54421B526B000D4F276 /* CircleExtendsShape.m */,
+				A03AA54621B52CEB00D4F276 /* TriangleExtendsShape.h */,
+				A03AA54721B52CEB00D4F276 /* TriangleExtendsShape.m */,
 			);
 			path = class;
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 				A01571CA21A45D110040DA58 /* Triangle.m in Sources */,
 				A0B21DEB219D10FD00D7E47C /* Person.m in Sources */,
 				A02E723C21A14E9C007DF9EC /* Sum.m in Sources */,
+				A03AA54821B52CEB00D4F276 /* TriangleExtendsShape.m in Sources */,
 				A03AA54521B526B000D4F276 /* CircleExtendsShape.m in Sources */,
 				A01571EE21A7A32E0040DA58 /* Shape.m in Sources */,
 				A01D8D5521991B76009E302A /* main.m in Sources */,
