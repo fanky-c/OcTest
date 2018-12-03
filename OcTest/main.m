@@ -6,9 +6,10 @@
 //  Copyright © 2018 赵超. All rights reserved.
 //
 #import <Foundation/Foundation.h>
-#import "Person.h"
-#import "Student.h"
-#import "Sum.h"
+#import "class/Person.h"
+#import "class/Student.h"
+#import "class/Sum.h"
+#import "class/Triangle.h"
 
 //入口
 int main(int argc, const char * argv[]) {
@@ -30,8 +31,23 @@ int main(int argc, const char * argv[]) {
         [Person testPerson];
         
         //调用Sum
-        Sum *sum = [[Sum alloc] init];
+        Sum *sum = [[Sum alloc] init]; //alloc分配内存空间
         NSLog(@"当前的累加结果是：%d" , [sum getSum:100]);
+        
+        
+        //调用Triangle
+        Triangle * tri = [[Triangle alloc] init];
+        [tri setHeight:10];
+        [tri setWidth:10];
+        NSLog(@"三角形的面积是：%g", [tri area]);
+        
+        //用类自身创建对象
+        Triangle * tri1 = [Triangle creatReact];
+        [tri1 setHeight:10];
+        [tri1 setWidth:10];
+        NSLog(@"三角形的面积是：%g", [tri1 area]);
+        
+        
     }
     return 0;
 }
