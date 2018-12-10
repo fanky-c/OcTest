@@ -12,6 +12,7 @@
 #import "class/Triangle.h"
 #import "class/CircleExtendsShape.h"
 #import "class/TriangleExtendsShape.h"
+#import "class/NsArray.h"
 
 //入口
 int main(int argc, const char * argv[]) {
@@ -57,6 +58,10 @@ int main(int argc, const char * argv[]) {
         TriangleExtendsShape * Triangele = [[TriangleExtendsShape alloc] initWithBottom:10 initWithHeight:15];
         NSLog(@"TriangleExtendsShape：%g" , [Triangele area]);
         
+        //NsArray
+        NsArray * Array = [[NsArray alloc] init];
+        [Array circle];
+        [Array mutaleCircle];
         
     }
     return 0;
