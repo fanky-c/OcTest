@@ -13,6 +13,7 @@
 #import "class/CircleExtendsShape.h"
 #import "class/TriangleExtendsShape.h"
 #import "class/NsArray.h"
+#import "class/NsString.h"
 
 //入口
 int main(int argc, const char * argv[]) {
@@ -62,6 +63,9 @@ int main(int argc, const char * argv[]) {
         NsArray * Array = [[NsArray alloc] init];
         [Array circle];
         [Array mutaleCircle];
+        
+        //NsString
+        [[[NsString alloc] init] run];
         
     }
     return 0;
