@@ -41,13 +41,54 @@
     
     //判断字符串的子串
     NSString * str6 = @"123";
-    NSRange rang = [str6 rangeOfString:@"10"];
+    NSRange rang = [str6 rangeOfString:@"1"];
     NSLog(@"字符串有1的字符串个数：%d， 位置在：%d", rang.length, rang.location);
     
     if(rang.location == NSNotFound){
         NSLog(@"没有");
     }else{
         NSLog(@"有");
+    }
+    
+    //字符串比较
+    NSString * str7 = @"123";
+    if([str7 isEqualToString:@"123"]){
+        NSLog(@"相等");
+    }else{
+        NSLog(@"不相等");
+    }
+    
+    //字符串转换为数值
+    NSString * str8 = @"123";
+    int a = [str8 intValue];
+    double b = [str8 doubleValue];
+    NSLog(@"转换为数值为：%d", a);
+    
+    //字符串是否以什么字符串开头和结尾
+    NSString * str9 = @"1.2.3test";
+    BOOL hasPrefix = [str9 hasPrefix:@"1"];
+    if(hasPrefix){
+        NSLog(@"是以1开头");
+    }
+    
+    BOOL hasSuffix = [str9 hasSuffix:@"test"];
+    if(hasSuffix){
+        NSLog(@"是以test结束");
+    }
+    
+    //提取子串
+    NSString * str10 = @"123.4test";
+    NSLog(@"substringFromIndex:%@", [str10 substringFromIndex:1]);
+    NSLog(@"substringToIndex:%@", [str10 substringToIndex:3]);
+    NSRange rang1 = {0, 3};
+    NSLog(@"substringWithRange:%@", [str10 substringWithRange:rang1]);
+    
+    //倒序提取字符串
+    NSString * srt11 = @"123456";
+    NSRange rang2 = {0 , 1};
+    for(long i = srt11.length-1;i>=0; i--){
+        rang2.location = i;
+        NSLog(@"%@", [srt11 substringWithRange:rang2]);
     }
 }
 @end
