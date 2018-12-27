@@ -14,6 +14,7 @@
 #import "class/TriangleExtendsShape.h"
 #import "class/NsArray.h"
 #import "class/NsString.h"
+#import "class/NsMutableString.h"
 
 //入口
 int main(int argc, const char * argv[]) {
@@ -66,6 +67,9 @@ int main(int argc, const char * argv[]) {
         
         //NsString
         [[[NsString alloc] init] run];
+        
+        //NsMutableString
+        [NsMutableString run];
         
     }
     return 0;
