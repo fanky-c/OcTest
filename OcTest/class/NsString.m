@@ -105,5 +105,30 @@
     }else{
         NSLog(@"发现当前字符:%@", _str12);
     }
+    
+    //判断字符串是否相等
+    NSString *str13 = @"123test";
+    if(![str13 isEqualToString:@"123"]){
+        NSLog(@"不相等");
+    }
+    
+    //去除空白
+    NSString *str14 = @"   test";
+    str14 = [str14 stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    NSLog(@"去除空白：%@",str14);
+    
+    //磁盘创建文件
+    NSString *str15 = @"磁盘创建文件";
+    [str15 writeToFile:@"1.txt" atomically:YES encoding: NSUTF8StringEncoding error:nil];
+    
+    //从磁盘读取文件
+     NSString *str16 = [NSString stringWithContentsOfFile:@"1.txt" encoding:NSUTF8StringEncoding error:nil];
+     NSLog(@"磁盘的内容：%@", str16);
+     
+     //字符串拼接
+     NSString *str17 = @"123";
+     //str17 = [NSString stringWithFormat:@"%@%@",str17,@"123"];
+     str17 = [str17 stringByAppendingString:@"123"];
+     NSLog(@"字符串拼接：%@",str17);
 }
 @end

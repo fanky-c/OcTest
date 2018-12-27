@@ -39,7 +39,7 @@
 		A01D8D5121991B76009E302A /* OcTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OcTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A01D8D5421991B76009E302A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A02A5C3C21C4E4E300B4F534 /* NsString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NsString.h; sourceTree = "<group>"; };
-		A02A5C3D21C4E4E300B4F534 /* NsString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NsString.m; sourceTree = "<group>"; };
+		A02A5C3D21C4E4E300B4F534 /* NsString.m */ = {isa = PBXFileReference; indentWidth = 5; lastKnownFileType = sourcecode.c.objc; path = NsString.m; sourceTree = "<group>"; };
 		A02E723721A148AA007DF9EC /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		A02E723821A148AA007DF9EC /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		A02E723A21A14E9C007DF9EC /* Sum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sum.h; sourceTree = "<group>"; };
