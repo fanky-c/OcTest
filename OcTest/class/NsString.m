@@ -90,5 +90,20 @@
         rang2.location = i;
         NSLog(@"%@", [srt11 substringWithRange:rang2]);
     }
+    
+    //字符串的长度
+    NSString * str11 = @"我是1test";
+    NSLog(@"长度为：%lu, %lu",[str11 length], [str11 lengthOfBytesUsingEncoding:NSUTF8StringEncoding]);
+    
+    //判断字符串是否包含某个字符串
+    NSString * str12 = @"我是超人1";
+    NSString * _str12 = @"超人1";
+    NSRange rang3 = [str12 rangeOfString:_str12];
+    NSLog(@"包含的长度：%lu，位置是：%lu", rang3.length, rang3.location);
+    if(rang3.location == NSNotFound){
+        NSLog(@"没有发现当前字符:%@", _str12);
+    }else{
+        NSLog(@"发现当前字符:%@", _str12);
+    }
 }
 @end
