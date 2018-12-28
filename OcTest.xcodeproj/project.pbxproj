@@ -15,6 +15,8 @@
 		A02E723C21A14E9C007DF9EC /* Sum.m in Sources */ = {isa = PBXBuildFile; fileRef = A02E723B21A14E9C007DF9EC /* Sum.m */; };
 		A03AA54521B526B000D4F276 /* CircleExtendsShape.m in Sources */ = {isa = PBXBuildFile; fileRef = A03AA54421B526B000D4F276 /* CircleExtendsShape.m */; };
 		A03AA54821B52CEB00D4F276 /* TriangleExtendsShape.m in Sources */ = {isa = PBXBuildFile; fileRef = A03AA54721B52CEB00D4F276 /* TriangleExtendsShape.m */; };
+		A03FAD7421D6671D004E8679 /* NsSet.m in Sources */ = {isa = PBXBuildFile; fileRef = A03FAD7321D6671D004E8679 /* NsSet.m */; };
+		A03FAD7721D66CA9004E8679 /* NsDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = A03FAD7621D66CA9004E8679 /* NsDictionary.m */; };
 		A078B6F421B92AC900A66783 /* NsArray.m in Sources */ = {isa = PBXBuildFile; fileRef = A078B6F321B92AC900A66783 /* NsArray.m */; };
 		A089761A21D51AF6008A8E08 /* NsMutableString.m in Sources */ = {isa = PBXBuildFile; fileRef = A089761921D51AF6008A8E08 /* NsMutableString.m */; };
 		A0B21DEB219D10FD00D7E47C /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B21DEA219D10FD00D7E47C /* Person.m */; };
@@ -49,6 +51,10 @@
 		A03AA54421B526B000D4F276 /* CircleExtendsShape.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleExtendsShape.m; sourceTree = "<group>"; };
 		A03AA54621B52CEB00D4F276 /* TriangleExtendsShape.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TriangleExtendsShape.h; sourceTree = "<group>"; };
 		A03AA54721B52CEB00D4F276 /* TriangleExtendsShape.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TriangleExtendsShape.m; sourceTree = "<group>"; };
+		A03FAD7221D6671D004E8679 /* NsSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NsSet.h; sourceTree = "<group>"; };
+		A03FAD7321D6671D004E8679 /* NsSet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NsSet.m; sourceTree = "<group>"; };
+		A03FAD7521D66CA9004E8679 /* NsDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NsDictionary.h; sourceTree = "<group>"; };
+		A03FAD7621D66CA9004E8679 /* NsDictionary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NsDictionary.m; sourceTree = "<group>"; };
 		A078B6F221B92AC900A66783 /* NsArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NsArray.h; sourceTree = "<group>"; };
 		A078B6F321B92AC900A66783 /* NsArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NsArray.m; sourceTree = "<group>"; };
 		A089761821D51AF6008A8E08 /* NsMutableString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NsMutableString.h; sourceTree = "<group>"; };
@@ -116,6 +122,10 @@
 				A02A5C3D21C4E4E300B4F534 /* NsString.m */,
 				A089761821D51AF6008A8E08 /* NsMutableString.h */,
 				A089761921D51AF6008A8E08 /* NsMutableString.m */,
+				A03FAD7221D6671D004E8679 /* NsSet.h */,
+				A03FAD7321D6671D004E8679 /* NsSet.m */,
+				A03FAD7521D66CA9004E8679 /* NsDictionary.h */,
+				A03FAD7621D66CA9004E8679 /* NsDictionary.m */,
 			);
 			path = class;
 			sourceTree = "<group>";
@@ -179,12 +189,14 @@
 				A01571CA21A45D110040DA58 /* Triangle.m in Sources */,
 				A02A5C3E21C4E4E300B4F534 /* NsString.m in Sources */,
 				A0B21DEB219D10FD00D7E47C /* Person.m in Sources */,
+				A03FAD7421D6671D004E8679 /* NsSet.m in Sources */,
 				A02E723C21A14E9C007DF9EC /* Sum.m in Sources */,
 				A03AA54821B52CEB00D4F276 /* TriangleExtendsShape.m in Sources */,
 				A03AA54521B526B000D4F276 /* CircleExtendsShape.m in Sources */,
 				A01571EE21A7A32E0040DA58 /* Shape.m in Sources */,
 				A01D8D5521991B76009E302A /* main.m in Sources */,
 				A078B6F421B92AC900A66783 /* NsArray.m in Sources */,
+				A03FAD7721D66CA9004E8679 /* NsDictionary.m in Sources */,
 				A089761A21D51AF6008A8E08 /* NsMutableString.m in Sources */,
 				A02E723921A148AA007DF9EC /* Student.m in Sources */,
 			);

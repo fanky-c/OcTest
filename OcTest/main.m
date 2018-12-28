@@ -15,6 +15,8 @@
 #import "class/NsArray.h"
 #import "class/NsString.h"
 #import "class/NsMutableString.h"
+#import "class/NsSet.h"
+#import "class/NsDictionary.h"
 
 //入口
 int main(int argc, const char * argv[]) {
@@ -70,6 +72,12 @@ int main(int argc, const char * argv[]) {
         
         //NsMutableString
         [NsMutableString run];
+        
+        //NsSet(集合)
+        [NsSet run];
+        
+        //字典
+        [NsDictionary run];
         
     }
     return 0;
