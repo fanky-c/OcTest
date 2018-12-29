@@ -15,6 +15,10 @@
 		A03FADE521D762AA004E8679 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A03FADE421D762AA004E8679 /* main.m */; };
 		A03FADEF21D762AA004E8679 /* IosTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A03FADEE21D762AA004E8679 /* IosTestTests.m */; };
 		A03FADFA21D762AA004E8679 /* IosTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A03FADF921D762AA004E8679 /* IosTestUITests.m */; };
+		A03FAE0F21D76AA8004E8679 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03FAE0D21D76AA8004E8679 /* SecondViewController.m */; };
+		A03FAE1021D76AA8004E8679 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A03FAE0E21D76AA8004E8679 /* SecondViewController.xib */; };
+		A03FAE1221D76AC1004E8679 /* TestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A03FAE1121D76AC1004E8679 /* TestView.xib */; };
+		A03FAE1521D76AE1004E8679 /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = A03FAE1421D76AE1004E8679 /* TestView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,12 @@
 		A03FADF521D762AA004E8679 /* IosTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IosTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A03FADF921D762AA004E8679 /* IosTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IosTestUITests.m; sourceTree = "<group>"; };
 		A03FADFB21D762AA004E8679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A03FAE0C21D76AA8004E8679 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		A03FAE0D21D76AA8004E8679 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		A03FAE0E21D76AA8004E8679 /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		A03FAE1121D76AC1004E8679 /* TestView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestView.xib; sourceTree = "<group>"; };
+		A03FAE1321D76AE1004E8679 /* TestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
+		A03FAE1421D76AE1004E8679 /* TestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +120,12 @@
 				A03FADE021D762AA004E8679 /* LaunchScreen.storyboard */,
 				A03FADE321D762AA004E8679 /* Info.plist */,
 				A03FADE421D762AA004E8679 /* main.m */,
+				A03FAE0C21D76AA8004E8679 /* SecondViewController.h */,
+				A03FAE0D21D76AA8004E8679 /* SecondViewController.m */,
+				A03FAE0E21D76AA8004E8679 /* SecondViewController.xib */,
+				A03FAE1121D76AC1004E8679 /* TestView.xib */,
+				A03FAE1321D76AE1004E8679 /* TestView.h */,
+				A03FAE1421D76AE1004E8679 /* TestView.m */,
 			);
 			path = IosTest;
 			sourceTree = "<group>";
@@ -235,8 +251,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A03FAE1021D76AA8004E8679 /* SecondViewController.xib in Resources */,
 				A03FADE221D762AA004E8679 /* LaunchScreen.storyboard in Resources */,
 				A03FADDF21D762AA004E8679 /* Assets.xcassets in Resources */,
+				A03FAE1221D76AC1004E8679 /* TestView.xib in Resources */,
 				A03FADDD21D762A8004E8679 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,7 +280,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A03FAE0F21D76AA8004E8679 /* SecondViewController.m in Sources */,
 				A03FADDA21D762A8004E8679 /* ViewController.m in Sources */,
+				A03FAE1521D76AE1004E8679 /* TestView.m in Sources */,
 				A03FADE521D762AA004E8679 /* main.m in Sources */,
 				A03FADD721D762A8004E8679 /* AppDelegate.m in Sources */,
 			);

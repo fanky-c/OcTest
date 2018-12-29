@@ -17,7 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    UIView *red = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 200, 100)];
+    red.backgroundColor = [UIColor blueColor];
+    [self.view addSubview:red];
 }
 
+- (void)injected{
+    NSLog(@"正在更新: %@", self);
+    [self viewDidLoad];
+}
 
 @end
