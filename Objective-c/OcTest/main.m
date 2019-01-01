@@ -17,6 +17,7 @@
 #import "class/NsMutableString.h"
 #import "class/NsSet.h"
 #import "class/NsDictionary.h"
+#import "class/OtherClass.h"
 
 //入口
 int main(int argc, const char * argv[]) {
@@ -78,6 +79,9 @@ int main(int argc, const char * argv[]) {
         
         //字典
         [NsDictionary run];
+        
+        //其他类
+        [OtherClass run];
         
     }
     return 0;

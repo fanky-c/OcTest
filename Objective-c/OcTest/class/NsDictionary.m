@@ -21,8 +21,9 @@
     
     //动态字典
     NSMutableDictionary * dict1 = [[NSMutableDictionary alloc] initWithCapacity:20];
-    [dict1 setObject:@"chao" forKey:@"name"];
+    [dict1 setObject:@"chao" forKey:@"name"]; //添加
     [dict1 setObject:@"12" forKey:@"age"];
+    //[dict1 removeObjectForKey:@"age"];  //删除
     NSArray * allkeys1 = [dict1 allKeys];
     for(NSString *str in allkeys1){
         NSLog(@"动态：key=%@,vaule=%@", str, [dict objectForKey:str]);
