@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "VCRoot.h"
+//#import "VCMain.h"
 
 @interface AppDelegate ()
 
@@ -25,6 +27,22 @@
         //    for masOS
         [[NSBundle bundleWithPath:@"/Applications/InjectionIII.app/Contents/Resources/macOSInjection10.bundle"] load];
     #endif
+    
+
+    //创建窗口对象
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    //创建根视图控制器对象
+    //方法一,默认用的
+    VCRoot * Root = [[VCRoot alloc] initWithNibName:@"VCRoot" bundle:nil];
+    
+    //方法二，类名和xib一样
+    //VCRoot * Root = [[VCRoot alloc] init];
+    
+    self.window.rootViewController = Root;
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
