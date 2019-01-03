@@ -35,7 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A03FAE3921DE0607004E8679 /* UILable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UILable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A03FAE3921DE0607004E8679 /* UILabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UILabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A03FAE3C21DE0607004E8679 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A03FAE3D21DE0607004E8679 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A03FAE3F21DE0607004E8679 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -45,10 +45,10 @@
 		A03FAE4821DE0609004E8679 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A03FAE4A21DE0609004E8679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A03FAE4B21DE0609004E8679 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A03FAE5121DE060A004E8679 /* UILableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UILableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A03FAE5121DE060A004E8679 /* UILabelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UILabelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A03FAE5521DE060A004E8679 /* UILableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UILableTests.m; sourceTree = "<group>"; };
 		A03FAE5721DE060A004E8679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A03FAE5C21DE060A004E8679 /* UILableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UILableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A03FAE5C21DE060A004E8679 /* UILabelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UILabelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A03FAE6021DE060A004E8679 /* UILableUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UILableUITests.m; sourceTree = "<group>"; };
 		A03FAE6221DE060A004E8679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,9 +91,9 @@
 		A03FAE3A21DE0607004E8679 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A03FAE3921DE0607004E8679 /* UILable.app */,
-				A03FAE5121DE060A004E8679 /* UILableTests.xctest */,
-				A03FAE5C21DE060A004E8679 /* UILableUITests.xctest */,
+				A03FAE3921DE0607004E8679 /* UILabel.app */,
+				A03FAE5121DE060A004E8679 /* UILabelTests.xctest */,
+				A03FAE5C21DE060A004E8679 /* UILabelUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,9 +135,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A03FAE3821DE0607004E8679 /* UILable */ = {
+		A03FAE3821DE0607004E8679 /* UILabel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A03FAE6521DE060A004E8679 /* Build configuration list for PBXNativeTarget "UILable" */;
+			buildConfigurationList = A03FAE6521DE060A004E8679 /* Build configuration list for PBXNativeTarget "UILabel" */;
 			buildPhases = (
 				A03FAE3521DE0607004E8679 /* Sources */,
 				A03FAE3621DE0607004E8679 /* Frameworks */,
@@ -147,14 +147,14 @@
 			);
 			dependencies = (
 			);
-			name = UILable;
+			name = UILabel;
 			productName = UILable;
-			productReference = A03FAE3921DE0607004E8679 /* UILable.app */;
+			productReference = A03FAE3921DE0607004E8679 /* UILabel.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A03FAE5021DE060A004E8679 /* UILableTests */ = {
+		A03FAE5021DE060A004E8679 /* UILabelTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A03FAE6821DE060A004E8679 /* Build configuration list for PBXNativeTarget "UILableTests" */;
+			buildConfigurationList = A03FAE6821DE060A004E8679 /* Build configuration list for PBXNativeTarget "UILabelTests" */;
 			buildPhases = (
 				A03FAE4D21DE060A004E8679 /* Sources */,
 				A03FAE4E21DE060A004E8679 /* Frameworks */,
@@ -165,14 +165,14 @@
 			dependencies = (
 				A03FAE5321DE060A004E8679 /* PBXTargetDependency */,
 			);
-			name = UILableTests;
+			name = UILabelTests;
 			productName = UILableTests;
-			productReference = A03FAE5121DE060A004E8679 /* UILableTests.xctest */;
+			productReference = A03FAE5121DE060A004E8679 /* UILabelTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A03FAE5B21DE060A004E8679 /* UILableUITests */ = {
+		A03FAE5B21DE060A004E8679 /* UILabelUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A03FAE6B21DE060A004E8679 /* Build configuration list for PBXNativeTarget "UILableUITests" */;
+			buildConfigurationList = A03FAE6B21DE060A004E8679 /* Build configuration list for PBXNativeTarget "UILabelUITests" */;
 			buildPhases = (
 				A03FAE5821DE060A004E8679 /* Sources */,
 				A03FAE5921DE060A004E8679 /* Frameworks */,
@@ -183,9 +183,9 @@
 			dependencies = (
 				A03FAE5E21DE060A004E8679 /* PBXTargetDependency */,
 			);
-			name = UILableUITests;
+			name = UILabelUITests;
 			productName = UILableUITests;
-			productReference = A03FAE5C21DE060A004E8679 /* UILableUITests.xctest */;
+			productReference = A03FAE5C21DE060A004E8679 /* UILabelUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -210,7 +210,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A03FAE3421DE0607004E8679 /* Build configuration list for PBXProject "UILable" */;
+			buildConfigurationList = A03FAE3421DE0607004E8679 /* Build configuration list for PBXProject "UILabel" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -223,9 +223,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A03FAE3821DE0607004E8679 /* UILable */,
-				A03FAE5021DE060A004E8679 /* UILableTests */,
-				A03FAE5B21DE060A004E8679 /* UILableUITests */,
+				A03FAE3821DE0607004E8679 /* UILabel */,
+				A03FAE5021DE060A004E8679 /* UILabelTests */,
+				A03FAE5B21DE060A004E8679 /* UILabelUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -289,12 +289,12 @@
 /* Begin PBXTargetDependency section */
 		A03FAE5321DE060A004E8679 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A03FAE3821DE0607004E8679 /* UILable */;
+			target = A03FAE3821DE0607004E8679 /* UILabel */;
 			targetProxy = A03FAE5221DE060A004E8679 /* PBXContainerItemProxy */;
 		};
 		A03FAE5E21DE060A004E8679 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A03FAE3821DE0607004E8679 /* UILable */;
+			target = A03FAE3821DE0607004E8679 /* UILabel */;
 			targetProxy = A03FAE5D21DE060A004E8679 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -477,7 +477,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = netease.UILableTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UILable.app/UILable";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UILabel.temp_caseinsensitive_rename.app/UILabel.temp_caseinsensitive_rename";
 			};
 			name = Debug;
 		};
@@ -495,7 +495,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = netease.UILableTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UILable.app/UILable";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UILabel.temp_caseinsensitive_rename.app/UILabel.temp_caseinsensitive_rename";
 			};
 			name = Release;
 		};
@@ -536,7 +536,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A03FAE3421DE0607004E8679 /* Build configuration list for PBXProject "UILable" */ = {
+		A03FAE3421DE0607004E8679 /* Build configuration list for PBXProject "UILabel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A03FAE6321DE060A004E8679 /* Debug */,
@@ -545,7 +545,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A03FAE6521DE060A004E8679 /* Build configuration list for PBXNativeTarget "UILable" */ = {
+		A03FAE6521DE060A004E8679 /* Build configuration list for PBXNativeTarget "UILabel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A03FAE6621DE060A004E8679 /* Debug */,
@@ -554,7 +554,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A03FAE6821DE060A004E8679 /* Build configuration list for PBXNativeTarget "UILableTests" */ = {
+		A03FAE6821DE060A004E8679 /* Build configuration list for PBXNativeTarget "UILabelTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A03FAE6921DE060A004E8679 /* Debug */,
@@ -563,7 +563,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A03FAE6B21DE060A004E8679 /* Build configuration list for PBXNativeTarget "UILableUITests" */ = {
+		A03FAE6B21DE060A004E8679 /* Build configuration list for PBXNativeTarget "UILabelUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A03FAE6C21DE060A004E8679 /* Debug */,

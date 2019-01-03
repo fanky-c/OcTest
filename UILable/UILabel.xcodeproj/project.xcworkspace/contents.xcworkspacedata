@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:UILable.xcodeproj">
+      location = "self:/Users/zhaochao/myspace/OcTest/UILable/UILabel.xcodeproj">
    </FileRef>
 </Workspace>
