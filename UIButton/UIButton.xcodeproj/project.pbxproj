@@ -13,8 +13,8 @@
 		A03FAEA821DE13A2004E8679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A03FAEA721DE13A2004E8679 /* Assets.xcassets */; };
 		A03FAEAB21DE13A2004E8679 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A03FAEA921DE13A2004E8679 /* LaunchScreen.storyboard */; };
 		A03FAEAE21DE13A2004E8679 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A03FAEAD21DE13A2004E8679 /* main.m */; };
-		A03FAEB621DE29D2004E8679 /* ic_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = A03FAEB421DE29D2004E8679 /* ic_screen.png */; };
-		A03FAEB721DE29D2004E8679 /* ic_scene.png in Resources */ = {isa = PBXBuildFile; fileRef = A03FAEB521DE29D2004E8679 /* ic_scene.png */; };
+		A03FAEBA21DE2BA1004E8679 /* ic_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = A03FAEB821DE2BA1004E8679 /* ic_screen.png */; };
+		A03FAEBB21DE2BA1004E8679 /* ic_scene.png in Resources */ = {isa = PBXBuildFile; fileRef = A03FAEB921DE2BA1004E8679 /* ic_scene.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +28,8 @@
 		A03FAEAA21DE13A2004E8679 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A03FAEAC21DE13A2004E8679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A03FAEAD21DE13A2004E8679 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A03FAEB421DE29D2004E8679 /* ic_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_screen.png; path = "../../../../workspace/设计文档/同传官网增加视频/assets/ic_screen.png"; sourceTree = "<group>"; };
-		A03FAEB521DE29D2004E8679 /* ic_scene.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_scene.png; path = "../../../../workspace/设计文档/同传官网增加视频/assets/ic_scene.png"; sourceTree = "<group>"; };
+		A03FAEB821DE2BA1004E8679 /* ic_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_screen.png; sourceTree = "<group>"; };
+		A03FAEB921DE2BA1004E8679 /* ic_scene.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_scene.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +62,8 @@
 		A03FAE9D21DE13A1004E8679 /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
-				A03FAEB521DE29D2004E8679 /* ic_scene.png */,
-				A03FAEB421DE29D2004E8679 /* ic_screen.png */,
+				A03FAEB921DE2BA1004E8679 /* ic_scene.png */,
+				A03FAEB821DE2BA1004E8679 /* ic_screen.png */,
 				A03FAE9E21DE13A1004E8679 /* AppDelegate.h */,
 				A03FAE9F21DE13A1004E8679 /* AppDelegate.m */,
 				A03FAEA121DE13A1004E8679 /* ViewController.h */,
@@ -136,9 +136,9 @@
 			files = (
 				A03FAEAB21DE13A2004E8679 /* LaunchScreen.storyboard in Resources */,
 				A03FAEA821DE13A2004E8679 /* Assets.xcassets in Resources */,
-				A03FAEB721DE29D2004E8679 /* ic_scene.png in Resources */,
+				A03FAEBB21DE2BA1004E8679 /* ic_scene.png in Resources */,
 				A03FAEA621DE13A1004E8679 /* Main.storyboard in Resources */,
-				A03FAEB621DE29D2004E8679 /* ic_screen.png in Resources */,
+				A03FAEBA21DE2BA1004E8679 /* ic_screen.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
