@@ -34,7 +34,8 @@
     NSString * _username = @"zhaochao";
     NSString * _pwd = @"123456";
     
-    if([_mTfUsername isEqual:_username] && [_mTfPassword isEqual:_pwd]){
+    
+    if([_mTfUsername.text isEqual:_username] && [_mTfPassword.text isEqual:_pwd]){
         UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"用户密码正确,登录成功！" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:@"取消", nil];
         [alert show];
     }else{

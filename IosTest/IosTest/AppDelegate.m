@@ -7,8 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "VCRoot.h"
-//#import "VCMain.h"
+#import "VCMain.h"
 
 @interface AppDelegate ()
 
@@ -33,11 +32,11 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
     //创建根视图控制器对象
-    //方法一,默认用的
-    VCRoot * Root = [[VCRoot alloc] initWithNibName:@"VCRoot" bundle:nil];
+    //方法一,类名和XIB不一致
+    VCMain * Root = [[VCMain alloc] initWithNibName:@"VCMain" bundle:nil];
     
     //方法二，类名和xib一样
-    //VCRoot * Root = [[VCRoot alloc] init];
+    //VCMain * Root = [[VCMain alloc] init];
     
     self.window.rootViewController = Root;
     
