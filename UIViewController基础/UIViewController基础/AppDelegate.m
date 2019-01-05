@@ -1,12 +1,13 @@
 //
 //  AppDelegate.m
-//  UIWindow
+//  UIViewController基础
 //
-//  Created by 赵超 on 2019/1/4.
+//  Created by 赵超 on 2019/1/5.
 //  Copyright © 2019 赵超. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -15,42 +16,27 @@
 @implementation AppDelegate
 
 
-
-//程序入口
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    //创建window
+    //创建window对象
+    //window属于AppDelegate属性
+    //UIScreen:当前硬件类
+    //mainScreen表示当前主屏幕相关信息
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    //通过rootViewController
-    self.window.rootViewController = [[UIViewController alloc] init];
+    //创建视图控制器对象，继承UIViewController
+    ViewController *VCRoot = [[ViewController alloc] init];
     
-    //设置window背景色
-    self.window.backgroundColor = [UIColor blueColor];
+    //对窗口的根视图控制器进行赋值操作
+    //整个UIKit框架只有一个根视图控制器,属于window属性
+    //视图控制器用来管理界面和处理界面逻辑，事件响应。
+    self.window.rootViewController = VCRoot;
     
-    //创建Uiview
-    UIView * view = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 150, 150)];
-    view.backgroundColor = [UIColor redColor];
 
-    //创建大的背景视图
-    UIView *backView = [[UIView alloc] initWithFrame:CGRectMake(30, 40, 300, 400)];
-    backView.backgroundColor = [UIColor grayColor];
-    
-    
-    //添加view到backView中
-    [backView addSubview:view];
-    
-    [self.window addSubview:backView];
- 
-    
-    //使window有效并且显示到屏幕上
+    //将window作为主视图并且显示出来
     [self.window makeKeyAndVisible];
     
-    //各个window属性都相等,最终都是指向self.window
-    if(self.window == view.window && view.window == backView.window && view.window == self.window.rootViewController.view.window){
-        NSLog(@"其实四个window都是相等！！！");
-    }
     
     return YES;
 }
