@@ -27,7 +27,7 @@
     // 设置按钮
     UIAlertAction *cancel=[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
     UIAlertAction *defult = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:nil];
-    UIAlertAction *destructive = [UIAlertAction actionWithTitle:@"我是内容" style:UIAlertActionStyleDestructive handler:nil];
+    //UIAlertAction *destructive = [UIAlertAction actionWithTitle:@"我是内容" style:UIAlertActionStyleDestructive handler:nil];
     
     [_alertView addAction:cancel];
     [_alertView addAction:defult];
