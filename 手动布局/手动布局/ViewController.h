@@ -7,9 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SuperView.h"
 
 @interface ViewController : UIViewController
+{
+    UIButton* _btn1 ;
+    UIButton* _btn2 ;
+}
 
+@property (retain, nonatomic) UIButton* btn1;
+@property (retain, nonatomic) UIButton* btn2;
 
 @end
 

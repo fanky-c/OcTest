@@ -13,6 +13,7 @@
 		A0173E1821E7994900492373 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0173E1721E7994900492373 /* Assets.xcassets */; };
 		A0173E1B21E7994900492373 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0173E1921E7994900492373 /* LaunchScreen.storyboard */; };
 		A0173E1E21E7994900492373 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0173E1D21E7994900492373 /* main.m */; };
+		A0173E2721E8B1EB00492373 /* SuperView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0173E2621E8B1EB00492373 /* SuperView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		A0173E1A21E7994900492373 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0173E1C21E7994900492373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0173E1D21E7994900492373 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A0173E2521E8B1EB00492373 /* SuperView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperView.h; sourceTree = "<group>"; };
+		A0173E2621E8B1EB00492373 /* SuperView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				A0173E1921E7994900492373 /* LaunchScreen.storyboard */,
 				A0173E1C21E7994900492373 /* Info.plist */,
 				A0173E1D21E7994900492373 /* main.m */,
+				A0173E2521E8B1EB00492373 /* SuperView.h */,
+				A0173E2621E8B1EB00492373 /* SuperView.m */,
 			);
 			path = "手动布局";
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0173E2721E8B1EB00492373 /* SuperView.m in Sources */,
 				A0173E1321E7994700492373 /* ViewController.m in Sources */,
 				A0173E1E21E7994900492373 /* main.m in Sources */,
 				A0173E1021E7994700492373 /* AppDelegate.m in Sources */,
