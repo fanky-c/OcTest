@@ -15,6 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 {
     Dog* _dog;
 }
+
+//简写
+//@property (retain) Dog* dog;
+
 - (void) setDog:(Dog *)dog;
 - (Dog *) dog;
 @end

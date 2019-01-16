@@ -10,16 +10,23 @@
 
 @implementation Person
 
+//简写
+//@synthesize dog = _dog;
+
+
 - (void) setDog:(Dog *)dog{
     if(_dog != dog){
+        //[_dog release] //每次都是释放上次的内存
         _dog = dog;
         //[_dog retain];  //让_dog的计数器+1  Xcode4.2(iOS 5)以后启用了ARC技术
     }
 }
-
 - (Dog *) dog{
     return _dog;
 }
+
+
+
 
 - (void) dealloc{
     NSLog(@"Person is dealloc");
