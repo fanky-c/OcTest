@@ -10,6 +10,9 @@
 #import "VCTabBar1.h"
 #import "VCTabBar2.h"
 #import "VCTabBar3.h"
+#import "VCTabBar4.h"
+#import "VCTabBar5.h"
+#import "VCTabBar6.h"
 
 
 @interface AppDelegate ()
@@ -38,7 +41,20 @@
     tabBar3.view.backgroundColor = [[UIColor yellowColor] init];
     tabBar3.title = @"分栏三";
     
-    NSArray* array = [NSArray arrayWithObjects:tabBar2, tabBar1, tabBar3, nil];
+    VCTabBar4* tabBar4 = [[VCTabBar4 alloc] init];
+    tabBar4.view.backgroundColor = [[UIColor grayColor] init];
+    tabBar4.title = @"分栏四";
+    
+
+    VCTabBar5* tabBar5 = [[VCTabBar5 alloc] init];
+    tabBar5.view.backgroundColor = [[UIColor purpleColor] init];
+    tabBar5.title = @"分栏五";
+
+    VCTabBar6* tabBar6 = [[VCTabBar6 alloc] init];
+    tabBar6.view.backgroundColor = [[UIColor blackColor] init];
+    tabBar6.title = @"分栏六";
+    
+    NSArray* array = [NSArray arrayWithObjects:tabBar2, tabBar1, tabBar3, tabBar4, tabBar5, tabBar6, nil];
     
     //创建分栏控制器对象
     UITabBarController* tbController = [[UITabBarController alloc] init];
@@ -48,6 +64,12 @@
     
     //分栏是否透明
     tbController.tabBar.translucent = NO;
+    
+    //分栏颜色
+    //tbController.tabBar.barTintColor = [UIColor yellowColor];
+    
+    //分栏选中颜色
+    tbController.tabBar.tintColor = [UIColor blackColor];
     
     //设置选中的视图，索引值从0开始
     tbController.selectedIndex = 2;
@@ -61,10 +83,44 @@
     //根视图控制器对象赋值为分栏控制器对象
     self.window.rootViewController = tbController;
     
-    
+    //协议对象
+    tbController.delegate = self;
     
     return YES;
 }
+
+//即将显示编辑
+- (void) tabBarController:(UITabBarController *)tabBarController willBeginCustomizingViewControllers:(NSArray<__kindof UIViewController *> *)viewControllers
+{
+    NSLog(@"即将显示编辑");
+}
+
+//即将结束编辑
+- (void) tabBarController:(UITabBarController *)tabBarController willEndCustomizingViewControllers:(NSArray<__kindof UIViewController *> *)viewControllers changed:(BOOL)changed
+{
+    NSLog(@"即将结束编辑");
+}
+
+
+
+//已经结束编辑
+- (void) tabBarController:(UITabBarController *)tabBarController didEndCustomizingViewControllers:(NSArray<__kindof UIViewController *> *)viewControllers changed:(BOOL)changed
+{
+    if(changed == YES){
+        NSLog(@"已经结束编辑， 当前排序：%@",viewControllers);
+    }
+}
+
+
+
+//选中控制器
+- (void) tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+{
+    NSLog(@"选中控制器：%@", viewController);
+    
+    //NSLog(@"选中控制器：%@",tabBarController.viewControllers[tabBarController.selectedIndex]);
+}
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {

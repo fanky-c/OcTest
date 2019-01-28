@@ -16,6 +16,9 @@
 		A013275D21F9F4D000487C36 /* VCTabBar1.m in Sources */ = {isa = PBXBuildFile; fileRef = A013275C21F9F4D000487C36 /* VCTabBar1.m */; };
 		A013276021F9F4DD00487C36 /* VCTabBar2.m in Sources */ = {isa = PBXBuildFile; fileRef = A013275F21F9F4DD00487C36 /* VCTabBar2.m */; };
 		A013276321F9F4EC00487C36 /* VCTabBar3.m in Sources */ = {isa = PBXBuildFile; fileRef = A013276221F9F4EC00487C36 /* VCTabBar3.m */; };
+		A013276621FF235100487C36 /* VCTabBar4.m in Sources */ = {isa = PBXBuildFile; fileRef = A013276521FF235100487C36 /* VCTabBar4.m */; };
+		A013276921FF238200487C36 /* VCTabBar5.m in Sources */ = {isa = PBXBuildFile; fileRef = A013276821FF238200487C36 /* VCTabBar5.m */; };
+		A013276C21FF239600487C36 /* VCTabBar6.m in Sources */ = {isa = PBXBuildFile; fileRef = A013276B21FF239600487C36 /* VCTabBar6.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,12 @@
 		A013275F21F9F4DD00487C36 /* VCTabBar2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCTabBar2.m; sourceTree = "<group>"; };
 		A013276121F9F4EC00487C36 /* VCTabBar3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCTabBar3.h; sourceTree = "<group>"; };
 		A013276221F9F4EC00487C36 /* VCTabBar3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCTabBar3.m; sourceTree = "<group>"; };
+		A013276421FF235100487C36 /* VCTabBar4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCTabBar4.h; sourceTree = "<group>"; };
+		A013276521FF235100487C36 /* VCTabBar4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCTabBar4.m; sourceTree = "<group>"; };
+		A013276721FF238200487C36 /* VCTabBar5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCTabBar5.h; sourceTree = "<group>"; };
+		A013276821FF238200487C36 /* VCTabBar5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCTabBar5.m; sourceTree = "<group>"; };
+		A013276A21FF239600487C36 /* VCTabBar6.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCTabBar6.h; sourceTree = "<group>"; };
+		A013276B21FF239600487C36 /* VCTabBar6.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCTabBar6.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +91,12 @@
 				A013275F21F9F4DD00487C36 /* VCTabBar2.m */,
 				A013276121F9F4EC00487C36 /* VCTabBar3.h */,
 				A013276221F9F4EC00487C36 /* VCTabBar3.m */,
+				A013276421FF235100487C36 /* VCTabBar4.h */,
+				A013276521FF235100487C36 /* VCTabBar4.m */,
+				A013276721FF238200487C36 /* VCTabBar5.h */,
+				A013276821FF238200487C36 /* VCTabBar5.m */,
+				A013276A21FF239600487C36 /* VCTabBar6.h */,
+				A013276B21FF239600487C36 /* VCTabBar6.m */,
 			);
 			path = "分栏控制器";
 			sourceTree = "<group>";
@@ -156,8 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A013276921FF238200487C36 /* VCTabBar5.m in Sources */,
 				A013275D21F9F4D000487C36 /* VCTabBar1.m in Sources */,
+				A013276C21FF239600487C36 /* VCTabBar6.m in Sources */,
 				A013274A21F9F42500487C36 /* ViewController.m in Sources */,
+				A013276621FF235100487C36 /* VCTabBar4.m in Sources */,
 				A013276321F9F4EC00487C36 /* VCTabBar3.m in Sources */,
 				A013276021F9F4DD00487C36 /* VCTabBar2.m in Sources */,
 				A013275521F9F42700487C36 /* main.m in Sources */,
