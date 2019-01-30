@@ -7,6 +7,7 @@
 //
 
 #import "VCRoot.h"
+#import "VCImageShow.h"
 
 @interface VCRoot ()
 
@@ -53,6 +54,9 @@
         
         [view addGestureRecognizer:tap];
         
+        //添加tag
+        view.tag = 101 + i;
+        
         [sv addSubview:view];
     }
     
@@ -62,9 +66,33 @@
     
 }
 
+/*
+//用tag传值
 - (void) pressTap:(UITapGestureRecognizer*) tap{
-    NSLog(@"点击！！！");
+    UIImageView* imageView = (UIImageView*) tap.view;
+    
+    VCImageShow* imageShow = [[VCImageShow alloc] init];
+    
+    imageShow.imageTag = imageView.tag;
+    
+    [self.navigationController pushViewController:imageShow animated:YES];
 }
+*/
+
+ //用image传值
+- (void) pressTap:(UITapGestureRecognizer*) tap{
+    
+    UIImageView* imageView = (UIImageView*) tap.view;
+    
+    VCImageShow* imageShow = [[VCImageShow alloc] init];
+    
+    imageShow.image = imageView.image;
+
+    
+    [self.navigationController pushViewController:imageShow animated:YES];
+}
+ 
+
 
 /*
 #pragma mark - Navigation
