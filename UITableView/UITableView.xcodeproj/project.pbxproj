@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A01BD4002210000B0005262F /* VCTableView3.m in Sources */ = {isa = PBXBuildFile; fileRef = A01BD3FF2210000B0005262F /* VCTableView3.m */; };
+		A01BD402221012200005262F /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01BD401221012200005262F /* image1.jpg */; };
 		A0EA585A220EB5010038B5F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EA5859220EB5010038B5F6 /* AppDelegate.m */; };
 		A0EA585D220EB5010038B5F6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EA585C220EB5010038B5F6 /* ViewController.m */; };
 		A0EA5860220EB5010038B5F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0EA585E220EB5010038B5F6 /* Main.storyboard */; };
@@ -18,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A01BD3FE2210000B0005262F /* VCTableView3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCTableView3.h; sourceTree = "<group>"; };
+		A01BD3FF2210000B0005262F /* VCTableView3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCTableView3.m; sourceTree = "<group>"; };
+		A01BD401221012200005262F /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image1.jpg; path = "../照片墙/照片墙/images/image1.jpg"; sourceTree = "<group>"; };
 		A0EA5855220EB5010038B5F6 /* UITableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0EA5858220EB5010038B5F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A0EA5859220EB5010038B5F6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -48,6 +53,7 @@
 		A0EA584C220EB5010038B5F6 = {
 			isa = PBXGroup;
 			children = (
+				A01BD401221012200005262F /* image1.jpg */,
 				A0EA5857220EB5010038B5F6 /* UITableView */,
 				A0EA5856220EB5010038B5F6 /* Products */,
 			);
@@ -77,6 +83,8 @@
 				A0EA5863220EB5030038B5F6 /* LaunchScreen.storyboard */,
 				A0EA5866220EB5030038B5F6 /* Info.plist */,
 				A0EA5867220EB5030038B5F6 /* main.m */,
+				A01BD3FE2210000B0005262F /* VCTableView3.h */,
+				A01BD3FF2210000B0005262F /* VCTableView3.m */,
 			);
 			path = UITableView;
 			sourceTree = "<group>";
@@ -139,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0EA5865220EB5030038B5F6 /* LaunchScreen.storyboard in Resources */,
+				A01BD402221012200005262F /* image1.jpg in Resources */,
 				A0EA5862220EB5030038B5F6 /* Assets.xcassets in Resources */,
 				A0EA5860220EB5010038B5F6 /* Main.storyboard in Resources */,
 			);
@@ -155,6 +164,7 @@
 				A0EA5868220EB5030038B5F6 /* main.m in Sources */,
 				A0EA5878220EB56D0038B5F6 /* VCTableView1.m in Sources */,
 				A0EA585A220EB5010038B5F6 /* AppDelegate.m in Sources */,
+				A01BD4002210000B0005262F /* VCTableView3.m in Sources */,
 				A0EA5879220EB56D0038B5F6 /* VCTableView2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

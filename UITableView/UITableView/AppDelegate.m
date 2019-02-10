@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "VCTableView1.h"
 #import "VCTableView2.h"
+#import "VCTableView3.h"
 
 @interface AppDelegate ()
 
@@ -27,8 +28,12 @@
     vcTable1.title = @"数据视图一";
     VCTableView2* vcTable2 = [[VCTableView2 alloc] init];
     vcTable2.title = @"数据视图二";
+    VCTableView3* vcTable3 = [[VCTableView3 alloc] init];
+    vcTable3.title = @"数据视图三";
     
-    NSArray* array = [NSArray arrayWithObjects:vcTable1,vcTable2, nil];
+    UINavigationController* nav = [[UINavigationController alloc] initWithRootViewController:vcTable3];
+    
+    NSArray* array = [NSArray arrayWithObjects:vcTable1,vcTable2, nav, nil];
     UITabBarController* tabBarController = [[UITabBarController alloc] init];
     tabBarController.viewControllers = array;
     
