@@ -38,20 +38,23 @@
         
     }else if (btn.tag == 101)
     {
-         NSLog(@"插入数据");
+        [self insertData];
+        //NSLog(@"插入数据");
         
     }else if (btn.tag == 102)
     {
-         NSLog(@"删除数据");
+        [self deleteData];
+        //NSLog(@"删除数据");
         
     }else if (btn.tag == 103)
     {
-         NSLog(@"查找显示");
+        [self selectData];
+        //NSLog(@"查找显示");
         
     }
 }
 
-- (void) createSqlite{
+- (void) createDB{
     //获取数据库的创建路径
     //NSHomeDirectory(): 获取手机app沙盒路径
     NSString* strPath = [NSHomeDirectory() stringByAppendingString:@"/Documents/db01.db"];
@@ -59,24 +62,78 @@
     //创建并打开数据库
     //如果没有就创建数据库
     //如果路径下有数据库，就加载数据库到内存
-    FMDatabase* db = [FMDatabase databaseWithPath:strPath];
+    _mDB = [FMDatabase databaseWithPath:strPath];
     
-    if(db != nil){
+    //判断数据库是否创建成功
+    if(_mDB != nil){
         NSLog(@"数据库创建成功！");
     }
     
     //打开数据库
-    BOOL isOpen = [db open];
+    BOOL isOpen = [_mDB open];
     if(isOpen){
         NSLog(@"打开数据库");
     }
     
-    //关闭数据库
-    BOOL isClose = [db close];
-    if(isClose){
-        NSLog(@"关闭数据库");
+    //创建表
+    NSString* strCreateTable = @"create table if not exists stu(id integer primary key, age interger, name varchar(20));";
+    if([_mDB executeUpdate:strCreateTable]){
+        NSLog(@"stu table is created!");
     }
     
 }
+
+- (void) closeDB{
+    //关闭数据库
+    BOOL isClose = [_mDB close];
+    if(isClose){
+        NSLog(@"关闭数据库");
+    }
+}
+
+- (void) createSqlite{
+    [self createDB];
+    [self closeDB];
+}
+
+- (void) insertData{
+    [self createDB];
+    if([_mDB open]){
+        NSString* strInsert = @"insert into stu values(2, 29, 'hack');";
+         if([_mDB executeUpdate:strInsert]){
+             NSLog(@"添加成功");
+         }
+    }
+    [self closeDB];
+}
+
+- (void) selectData{
+    [self createDB];
+    if([_mDB open]){
+        NSString* strQuery = @"select * from stu";
+        FMResultSet* results = [_mDB executeQuery:strQuery];
+        while ([results next]) {
+            NSInteger strID = [results intForColumn:@"id"];
+            NSString* strName = [results stringForColumn:@"name"];
+            NSInteger strAge = [results intForColumn:@"age"];
+            
+            NSLog(@"id = %ld , name = %@, age = %ld" , strID, strName, strAge);
+        }
+    }
+    [self closeDB];
+}
+
+
+- (void) deleteData{
+    [self createDB];
+    if([_mDB open]){
+        NSString* strDelete = @"delete from stu where id = 1;";
+        if([_mDB executeUpdate:strDelete]){
+            NSLog(@"删除成功！");
+        }
+    }
+    [self closeDB];
+}
+
 
 @end
