@@ -73,6 +73,7 @@
         [_lock unlock];
         NSLog(@"运行线程1, _count = %ld", _count);
     }
+    NSLog(@"最终1, _count = %ld", _count);
 }
 
 -(void) go2:(NSThread*) thread{
@@ -86,6 +87,7 @@
         [_lock unlock];
         NSLog(@"运行线程2, _count = %ld", _count);
     }
+     NSLog(@"最终2, _count = %ld", _count);
 }
 
 
