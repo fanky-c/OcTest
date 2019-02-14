@@ -67,6 +67,7 @@
         if(i++ >= 10000){
             break;
         }
+        //加锁、解锁
         [_lock lock];
         _count++;
         [_lock unlock];
