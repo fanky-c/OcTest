@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <AVAudioPlayerDelegate>
 {
     UIButton* _btnPlay;
     UIButton* _btnPause;
@@ -22,6 +22,9 @@
     UISwitch* _volumeOn;
     //音频播放器
     AVAudioPlayer* _player;
+    
+    //定时器
+    NSTimer* _timer;
     
 }
 

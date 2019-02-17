@@ -13,6 +13,7 @@
 		A0228A5A22191E82001F4F10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0228A5922191E82001F4F10 /* Assets.xcassets */; };
 		A0228A5D22191E82001F4F10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0228A5B22191E82001F4F10 /* LaunchScreen.storyboard */; };
 		A0228A6022191E82001F4F10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0228A5F22191E82001F4F10 /* main.m */; };
+		A0416BC1221957240095749B /* 郝云 - 活着.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A0416BC0221957240095749B /* 郝云 - 活着.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A0228A5C22191E82001F4F10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0228A5E22191E82001F4F10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0228A5F22191E82001F4F10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A0416BC0221957240095749B /* 郝云 - 活着.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "郝云 - 活着.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 		A0228A4422191E81001F4F10 = {
 			isa = PBXGroup;
 			children = (
+				A0416BC0221957240095749B /* 郝云 - 活着.mp3 */,
 				A0228A4F22191E81001F4F10 /* 音频 */,
 				A0228A4E22191E81001F4F10 /* Products */,
 			);
@@ -131,6 +134,7 @@
 				A0228A5D22191E82001F4F10 /* LaunchScreen.storyboard in Resources */,
 				A0228A5A22191E82001F4F10 /* Assets.xcassets in Resources */,
 				A0228A5822191E81001F4F10 /* Main.storyboard in Resources */,
+				A0416BC1221957240095749B /* 郝云 - 活着.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

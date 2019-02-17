@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+static double volume = 0.5;
+
 @interface ViewController ()
 
 @end
@@ -52,27 +54,61 @@
     _volumeSlider.frame =  CGRectMake(20, 380,self.view.frame.size.width - 40, 20);
     _volumeSlider.maximumValue = 100;
     _volumeSlider.minimumValue = 0;
+    _volumeSlider.value = volume * 100;
     [_volumeSlider addTarget:self action:@selector(volumeChange:) forControlEvents:UIControlEventValueChanged];
     [self.view addSubview:_volumeSlider];
     
+    //创建音频
+    [self createAudio];
+    
+    //创建定时器
+    if(_timer) [_timer invalidate];
+    _timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(update:) userInfo:nil repeats:YES];
+    
+    
+}
+
+-(void) audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag{
+    [_timer invalidate];
+}
+
+- (void) update:(NSTimer*) timer{
+    _audioProgress.progress = _player.currentTime / _player.duration;
+}
+
+- (void) createAudio{
+    //获取本地文件的方法
+    NSString* str = [[NSBundle mainBundle] pathForResource:@"郝云 - 活着" ofType:@"mp3"];
+    
+    //将字符串转换为url
+    NSURL* url = [NSURL fileURLWithPath:str];
+    
+    //创建音频播放对象
+    _player = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+    
+    //准备播放。解码
+    [_player prepareToPlay];
+    
+    _player.volume = volume;
     
 }
 
 - (void) pressPlay{
-    NSLog(@"pressPlay");
+    [_player play];
 }
 
 - (void) pressPause{
-    NSLog(@"pressPause");
+    [_player pause];
 }
 
 - (void) pressStop{
-    NSLog(@"pressStop");
+    [_player stop];
+    _player.currentTime = 0;
 }
 
 -(void) volumeChange:(UISlider*) slider{
-    //_audioProgress.progress = slider.value / 100;
-    NSLog(@"volume = %f" , slider.value);
+    _player.volume = slider.value / 100;
+    NSLog(@"音量大小 = %f" , slider.value);
 }
 
 @end
