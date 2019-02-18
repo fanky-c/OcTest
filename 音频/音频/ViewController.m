@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 
+//音量默认大小
 static double volume = 0.5;
 
 @interface ViewController ()
@@ -89,6 +90,7 @@ static double volume = 0.5;
     //准备播放。解码
     [_player prepareToPlay];
     
+    //设置音量大小
     _player.volume = volume;
     
 }
