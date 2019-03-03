@@ -36,7 +36,14 @@
     for (int i = 0; i < 6;  i++) {
         for (int j = 0; j < 6; j++) {
             UIButton* btn = [UIButton buttonWithType:UIButtonTypeCustom];
+            
+            //创建动画
+            btn.frame = CGRectMake(self.view.frame.size.width/2 - 25, self.view.frame.size.height/2 -25, 50, 50);
+            [UIView beginAnimations:@"FlipAni" context:nil];
+            [UIView setAnimationDuration:3];
             btn.frame = CGRectMake(10+50*j, 40+50*i, 50, 50);
+            btn.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleWidth| UIViewAutoresizingFlexibleHeight;
+            [UIView commitAnimations];
             
             //创建随机数
             int indexRandom = arc4random() % arr.count;
@@ -46,6 +53,7 @@
             [btn setImage:image forState:UIControlStateNormal];
             [btn addTarget:self action:@selector(pressBtn:) forControlEvents:UIControlEventTouchUpInside];
             [self.view addSubview:btn];
+            //self.view.autoresizesSubviews = YES;
             
             //添加标识
             btn.tag = indexRandom;
