@@ -19,7 +19,9 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     //[self getHomePath];
-    [self getDocumentsPath];
+    //[self getDocumentsPath];
+    //[self getLibraryPath];
+    [self getTemPath];
 }
 
 //获取沙盒路径
@@ -38,6 +40,22 @@
     NSString* documentsPath = [docPath lastObject];
     NSLog(@"documentsPath = %@", documentsPath);
     return documentsPath;
+}
+
+
+//获取Library路径
+-(NSString*) getLibraryPath{
+    NSArray* libPaths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
+    NSString* libraryPath = [libPaths firstObject];
+    NSLog(@"libraryPath = %@", libraryPath);
+    return libraryPath;
+}
+
+//获取temporary临时路径
+-(NSString*) getTemPath{
+    NSString* temporaryPath = NSTemporaryDirectory();
+    NSLog(@"temporaryPath = %@", temporaryPath);
+    return temporaryPath;
 }
 
 @end
