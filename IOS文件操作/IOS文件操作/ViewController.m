@@ -21,7 +21,8 @@
     //[self getHomePath];
     //[self getDocumentsPath];
     //[self getLibraryPath];
-    [self getTemPath];
+    //[self getTemPath];
+    [self parsePath];
 }
 
 //获取沙盒路径
@@ -56,6 +57,26 @@
     NSString* temporaryPath = NSTemporaryDirectory();
     NSLog(@"temporaryPath = %@", temporaryPath);
     return temporaryPath;
+}
+
+-(void) parsePath{
+    NSString* path = @"/Users/zhaochao/Library/Developer/CoreSimulator/Devices/F3D48D8F-8135-4626-BD67-CBCF36B81943/data/Containers/Data/Application/58F62260-68F7-4F2C-982B-ECA96A2C8D64/tmp/test.png";
+    
+    //获取路径的各个组成部分
+    NSArray *array = [path pathComponents];
+    NSLog(@"pathComponents = %@", array);
+    
+    //提取路径最后一个组成部分
+    NSString* lastName = [path lastPathComponent];
+    NSLog(@"lastName = %@", lastName);
+    
+    //删除路径最后一部分
+    NSString * string = [path stringByDeletingLastPathComponent];
+    NSLog(@"lastPath = %@", string);
+    
+    //追加内容到路径中
+    NSString* addString = [string stringByAppendingPathComponent:@"name.json"];
+    NSLog(@"addString = %@", addString);
 }
 
 @end
