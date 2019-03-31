@@ -22,7 +22,7 @@
     //[self getDocumentsPath];
     //[self getLibraryPath];
     //[self getTemPath];
-    [self parsePath];
+    //[self parsePath];
 }
 
 //获取沙盒路径
@@ -59,6 +59,7 @@
     return temporaryPath;
 }
 
+//路径文件操作
 -(void) parsePath{
     NSString* path = @"/Users/zhaochao/Library/Developer/CoreSimulator/Devices/F3D48D8F-8135-4626-BD67-CBCF36B81943/data/Containers/Data/Application/58F62260-68F7-4F2C-982B-ECA96A2C8D64/tmp/test.png";
     
@@ -77,6 +78,24 @@
     //追加内容到路径中
     NSString* addString = [string stringByAppendingPathComponent:@"name.json"];
     NSLog(@"addString = %@", addString);
+}
+
+
+//数据转换
+-(void) dataChange:(NSData*) data{
+    //NSData -> NSString
+    NSString* aString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    
+    //NSString -> NSData
+    NSData* aData = [aString dataUsingEncoding:NSUTF8StringEncoding];
+    
+    //NSData -> UIImage (aData在这里是个例子，因为t它本身就不是图片)
+    UIImage* image = [UIImage imageWithData:aData];
+    
+    
+    //UIImage -> NSData()  //UIImageJPEGRepresentation
+    NSData* data2 = UIImagePNGRepresentation(image);
+    
 }
 
 @end

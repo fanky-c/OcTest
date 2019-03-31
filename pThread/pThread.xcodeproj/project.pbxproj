@@ -7,32 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A012AC0F221431280004455B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A012AC0E221431280004455B /* AppDelegate.m */; };
-		A012AC12221431280004455B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A012AC11221431280004455B /* ViewController.m */; };
-		A012AC15221431280004455B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A012AC13221431280004455B /* Main.storyboard */; };
-		A012AC172214312B0004455B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A012AC162214312B0004455B /* Assets.xcassets */; };
-		A012AC1A2214312B0004455B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A012AC182214312B0004455B /* LaunchScreen.storyboard */; };
-		A012AC1D2214312B0004455B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A012AC1C2214312B0004455B /* main.m */; };
-		A01C67E72250A40F00E526D8 /* TicketMangager.m in Sources */ = {isa = PBXBuildFile; fileRef = A01C67E62250A40F00E526D8 /* TicketMangager.m */; };
+		A01C67D1224F93C000E526D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A01C67D0224F93C000E526D8 /* AppDelegate.m */; };
+		A01C67D4224F93C000E526D8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A01C67D3224F93C000E526D8 /* ViewController.m */; };
+		A01C67D7224F93C000E526D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A01C67D5224F93C000E526D8 /* Main.storyboard */; };
+		A01C67D9224F93C300E526D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A01C67D8224F93C300E526D8 /* Assets.xcassets */; };
+		A01C67DC224F93C300E526D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A01C67DA224F93C300E526D8 /* LaunchScreen.storyboard */; };
+		A01C67DF224F93C300E526D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A01C67DE224F93C300E526D8 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A012AC0A221431280004455B /* 多线程NSThread.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "多线程NSThread.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A012AC0D221431280004455B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A012AC0E221431280004455B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A012AC10221431280004455B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A012AC11221431280004455B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A012AC14221431280004455B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A012AC162214312B0004455B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A012AC192214312B0004455B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A012AC1B2214312B0004455B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A012AC1C2214312B0004455B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A01C67E52250A40F00E526D8 /* TicketMangager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TicketMangager.h; sourceTree = "<group>"; };
-		A01C67E62250A40F00E526D8 /* TicketMangager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TicketMangager.m; sourceTree = "<group>"; };
+		A01C67CC224F93C000E526D8 /* pThread.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pThread.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A01C67CF224F93C000E526D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A01C67D0224F93C000E526D8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A01C67D2224F93C000E526D8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A01C67D3224F93C000E526D8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A01C67D6224F93C000E526D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A01C67D8224F93C300E526D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A01C67DB224F93C300E526D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A01C67DD224F93C300E526D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A01C67DE224F93C300E526D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A012AC07221431280004455B /* Frameworks */ = {
+		A01C67C9224F93C000E526D8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,75 +39,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A012AC01221431270004455B = {
+		A01C67C3224F93C000E526D8 = {
 			isa = PBXGroup;
 			children = (
-				A012AC0C221431280004455B /* 多线程NSThread */,
-				A012AC0B221431280004455B /* Products */,
+				A01C67CE224F93C000E526D8 /* pThread */,
+				A01C67CD224F93C000E526D8 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A012AC0B221431280004455B /* Products */ = {
+		A01C67CD224F93C000E526D8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A012AC0A221431280004455B /* 多线程NSThread.app */,
+				A01C67CC224F93C000E526D8 /* pThread.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A012AC0C221431280004455B /* 多线程NSThread */ = {
+		A01C67CE224F93C000E526D8 /* pThread */ = {
 			isa = PBXGroup;
 			children = (
-				A012AC0D221431280004455B /* AppDelegate.h */,
-				A012AC0E221431280004455B /* AppDelegate.m */,
-				A012AC10221431280004455B /* ViewController.h */,
-				A012AC11221431280004455B /* ViewController.m */,
-				A012AC13221431280004455B /* Main.storyboard */,
-				A012AC162214312B0004455B /* Assets.xcassets */,
-				A012AC182214312B0004455B /* LaunchScreen.storyboard */,
-				A012AC1B2214312B0004455B /* Info.plist */,
-				A012AC1C2214312B0004455B /* main.m */,
-				A01C67E52250A40F00E526D8 /* TicketMangager.h */,
-				A01C67E62250A40F00E526D8 /* TicketMangager.m */,
+				A01C67CF224F93C000E526D8 /* AppDelegate.h */,
+				A01C67D0224F93C000E526D8 /* AppDelegate.m */,
+				A01C67D2224F93C000E526D8 /* ViewController.h */,
+				A01C67D3224F93C000E526D8 /* ViewController.m */,
+				A01C67D5224F93C000E526D8 /* Main.storyboard */,
+				A01C67D8224F93C300E526D8 /* Assets.xcassets */,
+				A01C67DA224F93C300E526D8 /* LaunchScreen.storyboard */,
+				A01C67DD224F93C300E526D8 /* Info.plist */,
+				A01C67DE224F93C300E526D8 /* main.m */,
 			);
-			path = "多线程NSThread";
+			path = pThread;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A012AC09221431280004455B /* 多线程NSThread */ = {
+		A01C67CB224F93C000E526D8 /* pThread */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A012AC202214312B0004455B /* Build configuration list for PBXNativeTarget "多线程NSThread" */;
+			buildConfigurationList = A01C67E2224F93C300E526D8 /* Build configuration list for PBXNativeTarget "pThread" */;
 			buildPhases = (
-				A012AC06221431280004455B /* Sources */,
-				A012AC07221431280004455B /* Frameworks */,
-				A012AC08221431280004455B /* Resources */,
+				A01C67C8224F93C000E526D8 /* Sources */,
+				A01C67C9224F93C000E526D8 /* Frameworks */,
+				A01C67CA224F93C000E526D8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "多线程NSThread";
-			productName = "多线程NSThread";
-			productReference = A012AC0A221431280004455B /* 多线程NSThread.app */;
+			name = pThread;
+			productName = pThread;
+			productReference = A01C67CC224F93C000E526D8 /* pThread.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A012AC02221431270004455B /* Project object */ = {
+		A01C67C4224F93C000E526D8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "赵超";
 				TargetAttributes = {
-					A012AC09221431280004455B = {
+					A01C67CB224F93C000E526D8 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = A012AC05221431270004455B /* Build configuration list for PBXProject "多线程NSThread" */;
+			buildConfigurationList = A01C67C7224F93C000E526D8 /* Build configuration list for PBXProject "pThread" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,56 +113,55 @@
 				en,
 				Base,
 			);
-			mainGroup = A012AC01221431270004455B;
-			productRefGroup = A012AC0B221431280004455B /* Products */;
+			mainGroup = A01C67C3224F93C000E526D8;
+			productRefGroup = A01C67CD224F93C000E526D8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A012AC09221431280004455B /* 多线程NSThread */,
+				A01C67CB224F93C000E526D8 /* pThread */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A012AC08221431280004455B /* Resources */ = {
+		A01C67CA224F93C000E526D8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A012AC1A2214312B0004455B /* LaunchScreen.storyboard in Resources */,
-				A012AC172214312B0004455B /* Assets.xcassets in Resources */,
-				A012AC15221431280004455B /* Main.storyboard in Resources */,
+				A01C67DC224F93C300E526D8 /* LaunchScreen.storyboard in Resources */,
+				A01C67D9224F93C300E526D8 /* Assets.xcassets in Resources */,
+				A01C67D7224F93C000E526D8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A012AC06221431280004455B /* Sources */ = {
+		A01C67C8224F93C000E526D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A012AC12221431280004455B /* ViewController.m in Sources */,
-				A01C67E72250A40F00E526D8 /* TicketMangager.m in Sources */,
-				A012AC1D2214312B0004455B /* main.m in Sources */,
-				A012AC0F221431280004455B /* AppDelegate.m in Sources */,
+				A01C67D4224F93C000E526D8 /* ViewController.m in Sources */,
+				A01C67DF224F93C300E526D8 /* main.m in Sources */,
+				A01C67D1224F93C000E526D8 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A012AC13221431280004455B /* Main.storyboard */ = {
+		A01C67D5224F93C000E526D8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A012AC14221431280004455B /* Base */,
+				A01C67D6224F93C000E526D8 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		A012AC182214312B0004455B /* LaunchScreen.storyboard */ = {
+		A01C67DA224F93C300E526D8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A012AC192214312B0004455B /* Base */,
+				A01C67DB224F93C300E526D8 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -175,7 +169,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A012AC1E2214312B0004455B /* Debug */ = {
+		A01C67E0224F93C300E526D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -234,7 +228,7 @@
 			};
 			name = Debug;
 		};
-		A012AC1F2214312B0004455B /* Release */ = {
+		A01C67E1224F93C300E526D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -287,33 +281,33 @@
 			};
 			name = Release;
 		};
-		A012AC212214312B0004455B /* Debug */ = {
+		A01C67E3224F93C300E526D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "多线程NSThread/Info.plist";
+				INFOPLIST_FILE = pThread/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "netease.---NSThread";
+				PRODUCT_BUNDLE_IDENTIFIER = netease.pThread;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		A012AC222214312B0004455B /* Release */ = {
+		A01C67E4224F93C300E526D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "多线程NSThread/Info.plist";
+				INFOPLIST_FILE = pThread/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "netease.---NSThread";
+				PRODUCT_BUNDLE_IDENTIFIER = netease.pThread;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -322,25 +316,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A012AC05221431270004455B /* Build configuration list for PBXProject "多线程NSThread" */ = {
+		A01C67C7224F93C000E526D8 /* Build configuration list for PBXProject "pThread" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A012AC1E2214312B0004455B /* Debug */,
-				A012AC1F2214312B0004455B /* Release */,
+				A01C67E0224F93C300E526D8 /* Debug */,
+				A01C67E1224F93C300E526D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A012AC202214312B0004455B /* Build configuration list for PBXNativeTarget "多线程NSThread" */ = {
+		A01C67E2224F93C300E526D8 /* Build configuration list for PBXNativeTarget "pThread" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A012AC212214312B0004455B /* Debug */,
-				A012AC222214312B0004455B /* Release */,
+				A01C67E3224F93C300E526D8 /* Debug */,
+				A01C67E4224F93C300E526D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A012AC02221431270004455B /* Project object */;
+	rootObject = A01C67C4224F93C000E526D8 /* Project object */;
 }

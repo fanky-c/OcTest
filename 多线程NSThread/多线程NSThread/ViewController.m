@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TicketMangager.h"
 
 
 
@@ -20,7 +21,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    NSArray* array = [[NSArray alloc] initWithObjects:@"启动线程一",@"启动线程二",@"启动线程三", nil];
+    NSArray* array = [[NSArray alloc] initWithObjects:@"启动线程一",@"启动线程二",@"启动线程三",@"上海北京卖票", nil];
 
     for(int i=0; i<array.count; i++){
         UIButton* btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
@@ -58,6 +59,9 @@
     }
     else if (tags == 102){
         NSLog(@"正常点击了按钮3");
+    }else if(tags == 103){
+        TicketMangager* ticket = [[TicketMangager alloc] init];
+        [ticket startSaleTicket];
     }
 }
 
