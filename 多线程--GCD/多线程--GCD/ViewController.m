@@ -18,7 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    NSArray* array = [[NSArray alloc] initWithObjects:@"单个异步线程",@"多个异步线程",@"串行执行",@"并行执行", nil];
+    NSArray* array = [[NSArray alloc] initWithObjects:@"单个异步线程",@"多个异步线程",@"串行执行",@"并行执行",@"Group", nil];
     
     for(int i=0; i<array.count; i++){
         UIButton* btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
@@ -99,8 +99,83 @@
             [NSThread sleepForTimeInterval:1];
             NSLog(@"end task 3");
         });
+    }else if(tag == 104){
+        //[self dispatchGroupAsync];
+        
+        dispatch_queue_t queue = dispatch_queue_create("com.test.group.gcd", DISPATCH_QUEUE_SERIAL);
+        dispatch_group_t group = dispatch_group_create();
+        
+        //enter和leave是成对出现
+        dispatch_group_enter(group);
+        [self getRequest1:^{
+            NSLog(@"request1 done");
+            dispatch_group_leave(group);
+        }];
+        
+        dispatch_group_enter(group);
+        [self getRequest2:^{
+            NSLog(@"request2 done");
+             dispatch_group_leave(group);
+        }];
+        
+        dispatch_group_notify(group, queue, ^{
+            NSLog(@"all task over");
+            dispatch_async(dispatch_get_main_queue(), ^{
+                NSLog(@"回到主线程，操作UI!");
+            });
+        });
+        
     }
 }
 
+//dispatch_group_async, group里面代码必须是同步！
+-(void)dispatchGroupAsync{
+    dispatch_queue_t queue = dispatch_queue_create("com.test.gcd.group", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_group_t group = dispatch_group_create();
+    
+    //任务一，里面必须是同步代码
+    dispatch_group_async(group, queue, ^{
+        NSLog(@"start task1");
+        [NSThread sleepForTimeInterval:2];
+        NSLog(@"end task1");
+    });
+    
+    //任务二
+    dispatch_group_async(group, queue, ^{
+        NSLog(@"start task2");
+        [NSThread sleepForTimeInterval:2];
+        NSLog(@"end task2");
+    });
+    
+    //当所有任务完成运行
+    dispatch_group_notify(group, queue, ^{
+        NSLog(@"all task over");
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSLog(@"回到主线程，操作UI!");
+        });
+    });
+}
+
+//模拟网络请求
+-(void)getRequest1:(void(^)())block{
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        NSLog(@"网络请求一发送");
+        [NSThread sleepForTimeInterval:3];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSLog(@"网络请求一完成！");
+            if(block) block();
+        });
+    });
+}
+-(void)getRequest2:(void(^)())block{
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        NSLog(@"网络请求二发送");
+        [NSThread sleepForTimeInterval:3];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSLog(@"网络请求二完成！");
+            if(block) block();
+        });
+    });
+}
 
 @end
