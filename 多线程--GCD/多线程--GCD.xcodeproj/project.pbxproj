@@ -13,6 +13,7 @@
 		A01C68002252379F00E526D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A01C67FF2252379F00E526D8 /* Assets.xcassets */; };
 		A01C68032252379F00E526D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A01C68012252379F00E526D8 /* LaunchScreen.storyboard */; };
 		A01C68062252379F00E526D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A01C68052252379F00E526D8 /* main.m */; };
+		A01C68232254E34C00E526D8 /* Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = A01C68222254E34C00E526D8 /* Toast.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		A01C68022252379F00E526D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A01C68042252379F00E526D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A01C68052252379F00E526D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A01C68212254E34C00E526D8 /* Toast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Toast.h; sourceTree = "<group>"; };
+		A01C68222254E34C00E526D8 /* Toast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Toast.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				A01C68012252379F00E526D8 /* LaunchScreen.storyboard */,
 				A01C68042252379F00E526D8 /* Info.plist */,
 				A01C68052252379F00E526D8 /* main.m */,
+				A01C68212254E34C00E526D8 /* Toast.h */,
+				A01C68222254E34C00E526D8 /* Toast.m */,
 			);
 			path = "多线程--GCD";
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A01C67FB2252379D00E526D8 /* ViewController.m in Sources */,
+				A01C68232254E34C00E526D8 /* Toast.m in Sources */,
 				A01C68062252379F00E526D8 /* main.m in Sources */,
 				A01C67F82252379D00E526D8 /* AppDelegate.m in Sources */,
 			);

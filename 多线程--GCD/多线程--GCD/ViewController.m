@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Toast.h"
 
 @interface ViewController ()
 
@@ -18,7 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    NSArray* array = [[NSArray alloc] initWithObjects:@"单个异步线程",@"多个异步线程",@"串行执行",@"并行执行",@"Group", nil];
+    NSArray* array = [[NSArray alloc] initWithObjects:@"单个异步线程",@"多个异步线程",@"串行执行",@"并行执行",@"Group", @"dispatch_once", @"dispatch_after", nil];
     
     for(int i=0; i<array.count; i++){
         UIButton* btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
@@ -125,6 +126,13 @@
             });
         });
         
+    }else if(tag == 105){
+        [Toast sharedInstance];
+    }else if(tag == 106){
+        NSLog(@"开始执行");
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            NSLog(@"延迟执行！");
+        });
     }
 }
 
