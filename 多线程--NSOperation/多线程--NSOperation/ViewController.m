@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CustomOperation.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) NSOperationQueue* operQueue;
@@ -18,7 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    NSArray* array = [[NSArray alloc] initWithObjects:@"NSInvocationOperation",@"NSBlockOperation", @"NSOperationQueue",nil];
+    NSArray* array = [[NSArray alloc] initWithObjects:@"NSInvocationOperation",@"NSBlockOperation", @"NSOperationQueue", @"CustomOperation", nil];
     
     for(int i=0; i<array.count; i++){
         UIButton* btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
@@ -38,6 +39,8 @@
         [self blockOperationTest];
     }else if(tag == 102){
         [self operationQueue];
+    }else if(tag == 103){
+        [self customOperation];
     }
 }
 
@@ -92,7 +95,7 @@
 }
 
 /**
-   NSOperatopnQueue,异步执行，新开一个线程!
+   NSOperatopnQueue,异步队列执行，新开一个线程!
  **/
 -(void)operationQueue{
     NSLog(@"main thread");
@@ -109,6 +112,36 @@
     
     [self.operQueue addOperation:blockOperation];
 
+    NSLog(@"end");
+}
+
+
+-(void)customOperation{
+    NSLog(@"main thread");
+    if(!self.operQueue){
+        self.operQueue = [[NSOperationQueue alloc] init];
+    }
+    
+    CustomOperation* operation1 = [[CustomOperation alloc] initName:@"operation1"];
+    CustomOperation* operation2 = [[CustomOperation alloc] initName:@"operation2"];
+    CustomOperation* operation3 = [[CustomOperation alloc] initName:@"operation3"];
+    CustomOperation* operation4 = [[CustomOperation alloc] initName:@"operation4"];
+    
+    //设置最大并发数
+    [self.operQueue setMaxConcurrentOperationCount:3];
+    
+    
+    //添加依赖关系 operation4依赖operation3
+    [operation4 addDependency:operation3];
+    [operation3 addDependency:operation2];
+    [operation2 addDependency:operation1];
+    
+    //添加到队列
+    [self.operQueue addOperation:operation1];
+    [self.operQueue addOperation:operation2];
+    [self.operQueue addOperation:operation3];
+    [self.operQueue addOperation:operation4];
+    
     NSLog(@"end");
 }
 

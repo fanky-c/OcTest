@@ -13,6 +13,7 @@
 		A01C683A2254E90800E526D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A01C68392254E90800E526D8 /* Assets.xcassets */; };
 		A01C683D2254E90800E526D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A01C683B2254E90800E526D8 /* LaunchScreen.storyboard */; };
 		A01C68402254E90800E526D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A01C683F2254E90800E526D8 /* main.m */; };
+		A0B6C9B222588C0D008BB509 /* CustomOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B6C9B122588C0D008BB509 /* CustomOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		A01C683C2254E90800E526D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A01C683E2254E90800E526D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A01C683F2254E90800E526D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A0B6C9B022588C0D008BB509 /* CustomOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomOperation.h; sourceTree = "<group>"; };
+		A0B6C9B122588C0D008BB509 /* CustomOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				A01C683B2254E90800E526D8 /* LaunchScreen.storyboard */,
 				A01C683E2254E90800E526D8 /* Info.plist */,
 				A01C683F2254E90800E526D8 /* main.m */,
+				A0B6C9B022588C0D008BB509 /* CustomOperation.h */,
+				A0B6C9B122588C0D008BB509 /* CustomOperation.m */,
 			);
 			path = "多线程--NSOperation";
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0B6C9B222588C0D008BB509 /* CustomOperation.m in Sources */,
 				A01C68352254E90500E526D8 /* ViewController.m in Sources */,
 				A01C68402254E90800E526D8 /* main.m in Sources */,
 				A01C68322254E90500E526D8 /* AppDelegate.m in Sources */,
