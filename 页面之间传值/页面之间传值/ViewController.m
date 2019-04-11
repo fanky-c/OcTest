@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "NextViewController.h"
+#import "SharedInstance.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) UILabel* lable;
@@ -25,6 +26,11 @@
     [self.view addSubview:self.lable];
     [self.view addSubview:self.btn];
     
+}
+
+-(void) viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:YES];
+    _lable.text = [SharedInstance sharedInstance].str;
 }
 
 -(UILabel*)lable{

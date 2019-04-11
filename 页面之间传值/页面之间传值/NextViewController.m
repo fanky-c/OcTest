@@ -7,6 +7,7 @@
 //
 
 #import "NextViewController.h"
+#import "SharedInstance.h"
 
 @interface NextViewController ()
 @property (nonatomic, strong) UITextField* textField;
@@ -71,6 +72,7 @@
 
 
 -(void)btnClick{
+    [SharedInstance sharedInstance].str = self.inputText;
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
