@@ -1,20 +1,19 @@
 //
-//  NextViewController.m
+//  FourViewController.m
 //  页面之间传值
 //
-//  Created by 赵超 on 2019/4/8.
+//  Created by 赵超 on 2019/4/14.
 //  Copyright © 2019 赵超. All rights reserved.
 //
 
-#import "NextViewController.h"
-#import "SharedInstance.h"
+#import "FourViewController.h"
 
-@interface NextViewController ()
+@interface FourViewController ()
 @property (nonatomic, strong) UITextField* textField;
 @property (nonatomic, strong) UIButton* btn;
 @end
 
-@implementation NextViewController
+@implementation FourViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -27,16 +26,14 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
-
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 -(UITextField*)textField{
     if(_textField == nil){
@@ -72,8 +69,9 @@
 
 
 -(void)btnClick{
-    [SharedInstance sharedInstance].str = self.inputText;
-    [self dismissViewControllerAnimated:YES completion:nil];
+    self.block(self.textField.text);
+    [self dismissViewControllerAnimated:YES completion:NO];
+    
 }
 
 @end

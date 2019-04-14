@@ -1,20 +1,21 @@
 //
-//  NextViewController.m
+//  ThirdViewController.m
 //  页面之间传值
 //
-//  Created by 赵超 on 2019/4/8.
+//  Created by 赵超 on 2019/4/11.
 //  Copyright © 2019 赵超. All rights reserved.
 //
 
-#import "NextViewController.h"
-#import "SharedInstance.h"
+#import "ThirdViewController.h"
 
-@interface NextViewController ()
+@interface ThirdViewController ()
 @property (nonatomic, strong) UITextField* textField;
 @property (nonatomic, strong) UIButton* btn;
 @end
 
-@implementation NextViewController
+@implementation ThirdViewController
+
+@synthesize inputText;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -35,8 +36,6 @@
     // Pass the selected object to the new view controller.
 }
 */
-
-
 
 -(UITextField*)textField{
     if(_textField == nil){
@@ -72,7 +71,9 @@
 
 
 -(void)btnClick{
-    [SharedInstance sharedInstance].str = self.inputText;
+    //代理传值---反向传值
+    [self.delegate passValue:self.inputText];
+    
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
