@@ -12,12 +12,14 @@
 #import "SharedInstance.h"
 #import "ThirdViewController.h"
 #import "FourViewController.h"
+#import "FiveViewController.h"
 
 @interface ViewController ()<passValueDelegate>  //遵守协议
 @property (nonatomic, strong) UILabel* lable;
 @property (nonatomic, strong) UIButton* btn;
 @property (nonatomic, strong) UIButton* btn1;
 @property (nonatomic, strong) UIButton* btn2;
+@property (nonatomic, strong) UIButton* btn3;
 @end
 
 @implementation ViewController
@@ -32,6 +34,7 @@
     [self.view addSubview:self.btn];
     [self.view addSubview:self.btn1];
     [self.view addSubview:self.btn2];
+    [self.view addSubview:self.btn3];
     
 }
 
@@ -87,6 +90,18 @@
 }
 
 
+-(UIButton*)btn3{
+    if(!_btn3){
+        _btn3 = [[UIButton alloc] initWithFrame:CGRectMake(100, 480, 260, 40)];
+        _btn3.backgroundColor = [UIColor redColor];
+        [_btn3 setTitle:@"NSNotificationCenter传值" forState:UIControlStateNormal];
+        [_btn3 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [_btn3 addTarget:self action:@selector(btnChange3) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _btn3;
+}
+
+
 -(void)btnChange{
     NextViewController* nextView = [[NextViewController alloc] init];
     
@@ -115,6 +130,21 @@
     
     [self presentViewController:fourView animated:YES completion:nil];
 }
+
+
+-(void)btnChange3{
+    FiveViewController* fiveView = [[FiveViewController alloc] init];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateValue:) name:@"postValue" object:nil];
+    
+    [self presentViewController:fiveView animated:YES completion:nil];
+}
+
+
+-(void)updateValue:(NSNotification*)not{
+    self.lable.text = not.userInfo[@"val"];
+}
+
 
 
 //实现协议方法

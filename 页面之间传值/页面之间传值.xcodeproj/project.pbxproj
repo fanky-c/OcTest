@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A002E6EC2263733C00029FA4 /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A002E6EB2263733C00029FA4 /* FourViewController.m */; };
+		A002E6EF226377A500029FA4 /* FiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A002E6EE226377A500029FA4 /* FiveViewController.m */; };
 		A0B6C9C2225B887B008BB509 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B6C9C1225B887B008BB509 /* AppDelegate.m */; };
 		A0B6C9C5225B887B008BB509 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B6C9C4225B887B008BB509 /* ViewController.m */; };
 		A0B6C9C8225B887B008BB509 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B6C9C6225B887B008BB509 /* Main.storyboard */; };
@@ -22,6 +23,8 @@
 /* Begin PBXFileReference section */
 		A002E6EA2263733C00029FA4 /* FourViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FourViewController.h; sourceTree = "<group>"; };
 		A002E6EB2263733C00029FA4 /* FourViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FourViewController.m; sourceTree = "<group>"; };
+		A002E6ED226377A500029FA4 /* FiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FiveViewController.h; sourceTree = "<group>"; };
+		A002E6EE226377A500029FA4 /* FiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FiveViewController.m; sourceTree = "<group>"; };
 		A0B6C9BD225B887B008BB509 /* 页面之间传值.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "页面之间传值.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B6C9C0225B887B008BB509 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A0B6C9C1225B887B008BB509 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -87,6 +90,8 @@
 				A0B6C9E2225F8645008BB509 /* ThirdViewController.m */,
 				A002E6EA2263733C00029FA4 /* FourViewController.h */,
 				A002E6EB2263733C00029FA4 /* FourViewController.m */,
+				A002E6ED226377A500029FA4 /* FiveViewController.h */,
+				A002E6EE226377A500029FA4 /* FiveViewController.m */,
 			);
 			path = "页面之间传值";
 			sourceTree = "<group>";
@@ -161,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A002E6EF226377A500029FA4 /* FiveViewController.m in Sources */,
 				A002E6EC2263733C00029FA4 /* FourViewController.m in Sources */,
 				A0B6C9C5225B887B008BB509 /* ViewController.m in Sources */,
 				A0B6C9DB225B8C67008BB509 /* NextViewController.m in Sources */,
